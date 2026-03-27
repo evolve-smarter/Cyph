@@ -177,13 +177,13 @@ export default function Intel() {
               <div style={{ fontSize: '1.4rem', flexShrink: 0, lineHeight: 1 }}>{dir.icon}</div>
               <div style={{ flex: 1 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
-                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: dir.color, fontFamily: 'monospace' }}>{dir.name}</span>
+                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: dir.color, fontFamily: "'JetBrains Mono', monospace" }}>{dir.name}</span>
                   <span style={{ fontSize: '0.52rem', color: 'var(--dim)', padding: '1px 7px', borderRadius: 6, background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.07)' }}>{dir.count}</span>
                 </div>
                 <div style={{ fontSize: '0.6rem', color: 'var(--dim)', marginBottom: 5 }}>{dir.description}</div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
                   {dir.files.map((f, j) => (
-                    <span key={j} style={{ fontSize: '0.55rem', color: 'var(--text)', opacity: 0.6, background: 'rgba(255,255,255,.03)', border: '1px solid rgba(255,255,255,.06)', padding: '1px 7px', borderRadius: 4, fontFamily: 'monospace' }}>
+                    <span key={j} style={{ fontSize: '0.55rem', color: 'var(--text)', opacity: 0.6, background: 'rgba(255,255,255,.03)', border: '1px solid rgba(255,255,255,.06)', padding: '1px 7px', borderRadius: 4, fontFamily: "'JetBrains Mono', monospace" }}>
                       {f}
                     </span>
                   ))}
@@ -209,14 +209,14 @@ export default function Intel() {
               <span style={{ fontSize: '1rem', flexShrink: 0 }}>{doc.icon}</span>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '0.72rem', fontWeight: 600, marginBottom: 1 }}>{doc.label}</div>
-                <div style={{ fontSize: '0.55rem', color: 'var(--dim)', fontFamily: 'monospace' }}>{doc.path}</div>
+                <div style={{ fontSize: '0.55rem', color: 'var(--dim)', fontFamily: "'JetBrains Mono', monospace" }}>{doc.path}</div>
               </div>
               <span style={{ fontSize: '0.6rem', color: 'var(--blue)', opacity: 0.7 }}>→</span>
             </div>
           ))}
         </div>
         <div style={{ marginTop: 12, padding: '8px 12px', background: 'rgba(68,136,255,.04)', borderRadius: 8, fontSize: '0.6rem', color: 'var(--dim)', lineHeight: 1.5 }}>
-          📂 Workspace: <span style={{ color: 'var(--blue)', fontFamily: 'monospace' }}>/Users/aimoneymachine/.openclaw/workspace</span>
+          📂 Workspace: <span style={{ color: 'var(--blue)', fontFamily: "'JetBrains Mono', monospace" }}>/Users/aimoneymachine/.openclaw/workspace</span>
         </div>
       </Card>
 

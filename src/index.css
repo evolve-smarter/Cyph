@@ -28,9 +28,16 @@ html, body, #root {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Courier New', 'Lucida Console', monospace;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 14px;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Monospace only where it makes sense — code, paths, IDs */
+code, pre, .mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 /* Scanlines overlay */
@@ -238,10 +245,11 @@ body::before {
 }
 
 .tab-label {
-  font-size: clamp(11px, 2.8vw, 11px);
-  letter-spacing: 0.12em;
+  font-size: clamp(10px, 2.8vw, 11px);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-family: monospace;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   transition: color 0.2s;
 }
 
