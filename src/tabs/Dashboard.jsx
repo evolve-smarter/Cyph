@@ -123,7 +123,20 @@ export default function Dashboard() {
   const crew = AGENTS.filter(a => !a.isCommander)
 
   return (
-    <div style={{ height: '100%', overflowY: 'auto', overflowX: 'hidden', padding: '10px 12px 6px' }}>
+    <div style={{
+      height: '100%', overflowY: 'auto', overflowX: 'hidden', padding: '10px 12px 6px',
+      backgroundImage: 'url(/hero-bg.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center top',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'local',
+    }}>
+    {/* Hero background overlay to keep legibility */}
+    <div style={{
+      position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none',
+      background: 'linear-gradient(180deg, rgba(5,8,20,.78) 0%, rgba(5,8,20,.92) 40%, rgba(5,8,20,.98) 100%)',
+    }} />
+    <div style={{ position: 'relative', zIndex: 1 }}>
 
       {/* ─── HEADER ─── */}
       <div style={{
@@ -382,6 +395,7 @@ export default function Dashboard() {
         </span>
       </div>
 
+    </div>{/* end zIndex wrapper */}
     </div>
   )
 }

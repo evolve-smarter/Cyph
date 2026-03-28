@@ -2,6 +2,7 @@ import { useState } from 'react'
 import StarField from './components/StarField'
 import TabNav from './components/TabNav'
 import Dashboard from './tabs/Dashboard'
+import Projects from './tabs/Projects'
 import Chat from './tabs/Chat'
 import Intel from './tabs/Intel'
 import Goals from './tabs/Goals'
@@ -11,6 +12,7 @@ export default function App() {
 
   const tabs = {
     dashboard: <Dashboard />,
+    projects: <Projects />,
     chat: <Chat />,
     intel: <Intel />,
     goals: <Goals />,

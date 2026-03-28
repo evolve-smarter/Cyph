@@ -1,5 +1,6 @@
 const tabs = [
   { id: 'dashboard', label: 'Dashboard', icon: '⬡' },
+  { id: 'projects',  label: 'Projects',  icon: '🗂️' },
   { id: 'chat',      label: 'Chat',      icon: '💬' },
   { id: 'intel',     label: 'Intel',     icon: '📡' },
   { id: 'goals',     label: 'Goals',     icon: '🎯' },
