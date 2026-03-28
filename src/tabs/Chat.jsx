@@ -19,7 +19,7 @@ import { useState, useRef, useEffect } from 'react'
 //   { "message": "...", "channel": "webchat" }
 // ─────────────────────────────────────────────────────────────────────────────
 
-const GATEWAY = 'http://127.0.0.1:18789'
+const GATEWAY = 'http://100.119.58.128:18789'
 const TOKEN = import.meta.env.VITE_OPENCLAW_TOKEN || ''
 
 async function sendToOpenClaw(message) {
@@ -251,6 +251,7 @@ export default function Chat() {
         borderTop: '1px solid rgba(68,136,255,.12)',
         backdropFilter: 'blur(20px)',
         display: 'flex', gap: 10, alignItems: 'flex-end',
+        boxSizing: 'border-box', overflow: 'hidden',
       }}>
         <textarea
           ref={inputRef}
