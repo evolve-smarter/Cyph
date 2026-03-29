@@ -1,7 +1,7 @@
 const tabs = [
   { id: 'dashboard', label: 'Command', icon: '⬡' },
   { id: 'tasks',     label: 'Tasks',   icon: '✓' },
-  { id: 'projects',  label: 'Build',   icon: '🗂️' },
+  { id: 'office',    label: 'Office',  icon: '🐱' },
   { id: 'vault',     label: 'Vault',   icon: '🗃️' },
   { id: 'chat',      label: 'Chat',    icon: '💬' },
 ]

@@ -5,6 +5,7 @@ import Dashboard from './tabs/Dashboard'
 import Tasks from './tabs/Tasks'
 import Projects from './tabs/Projects'
 import Vault from './tabs/Vault'
+import Office from './tabs/Office'
 import Chat from './tabs/Chat'
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
     dashboard: <Dashboard />,
     tasks:     <Tasks />,
     projects:  <Projects />,
+    office:    <Office />,
     vault:     <Vault />,
     chat:      <Chat />,
   }
