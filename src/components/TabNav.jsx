@@ -1,11 +1,9 @@
 const tabs = [
-  { id: 'dashboard', label: 'Home',   icon: '⬡' },
-  { id: 'tasks',     label: 'Tasks',  icon: '✓' },
-  { id: 'projects',  label: 'Build',  icon: '🗂️' },
-  { id: 'memory',    label: 'Memory', icon: '🧠' },
-  { id: 'documents', label: 'Docs',   icon: '📁' },
-  { id: 'chat',      label: 'Chat',   icon: '💬' },
-  { id: 'goals',     label: 'Goals',  icon: '🎯' },
+  { id: 'dashboard', label: 'Command', icon: '⬡' },
+  { id: 'tasks',     label: 'Tasks',   icon: '✓' },
+  { id: 'projects',  label: 'Build',   icon: '🗂️' },
+  { id: 'vault',     label: 'Vault',   icon: '🗃️' },
+  { id: 'chat',      label: 'Chat',    icon: '💬' },
 ]
 
 export default function TabNav({ active, onChange }) {

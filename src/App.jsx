@@ -4,22 +4,18 @@ import TabNav from './components/TabNav'
 import Dashboard from './tabs/Dashboard'
 import Tasks from './tabs/Tasks'
 import Projects from './tabs/Projects'
-import Memory from './tabs/Memory'
-import Documents from './tabs/Documents'
+import Vault from './tabs/Vault'
 import Chat from './tabs/Chat'
-import Goals from './tabs/Goals'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
 
   const tabs = {
     dashboard: <Dashboard />,
-    tasks: <Tasks />,
-    projects: <Projects />,
-    memory: <Memory />,
-    documents: <Documents />,
-    chat: <Chat />,
-    goals: <Goals />,
+    tasks:     <Tasks />,
+    projects:  <Projects />,
+    vault:     <Vault />,
+    chat:      <Chat />,
   }
 
   return (
